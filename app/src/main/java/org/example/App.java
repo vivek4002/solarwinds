@@ -28,8 +28,7 @@ public class App {
             }
             System.out.println("Req Status: "+req.getStatus().toString());
         } catch (InvalidApprovalException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         // if rejected byn one approver, others can not approve further
